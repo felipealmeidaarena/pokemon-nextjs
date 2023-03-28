@@ -1,5 +1,4 @@
-import { Flex, GridItem, Image, Text } from "@chakra-ui/react";
-import { transform } from "framer-motion";
+import { Flex, GridItem, Image, Text, Link } from "@chakra-ui/react";
 
 import { Hability } from "./Hability";
 
@@ -42,16 +41,16 @@ export const PokemonItem = ({ name, id, elementsAvatarUrl, avatarUrl }: PokemonT
           </Flex>
           <Flex direction='row'>
             <Flex direction='row' gap='2'>
-
               {elementsAvatarUrl.map((item, index) => (
                 <Hability key={index} imageUrl={item.imageUrl} type={item.type} />
               ))}
-
             </Flex>
           </Flex>
         </Flex>
         <Flex direction='column' justifyContent='center'>
-          <Image w="130px" _hover={{transition: "0.6s ease-in-out", transform: "scale(1.4)"}} src={avatarUrl} alt="avatar-url" />
+          <Link href={`pokemons/${id}`}>
+            <Image w="130px" _hover={{ transition: "0.6s ease-in-out", transform: "scale(1.4)" }} src={avatarUrl} alt="avatar-url" />
+          </Link>
         </Flex>
       </Flex>
     </GridItem>
