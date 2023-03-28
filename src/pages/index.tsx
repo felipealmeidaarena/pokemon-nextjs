@@ -1,123 +1,253 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import { Center, Container, Grid, GridItem, Box, Image, Text, Flex } from '@chakra-ui/react'
 
-const inter = Inter({ subsets: ['latin'] })
+const IndexPage = () => (
+  <Center h='100vh'>
+    <Container maxW='1140px' justifyContent='center'>
+      <Grid templateColumns='repeat(3, 1fr)' gap={6}>
+        <GridItem w='100%' rounded='xl' bg='#89be89' px='3' py='2'>
+          <Flex direction='row' justifyContent='space-between'>
+            <Flex direction='column' justifyContent='center' gap='3'>
+              <Flex direction='column'>
+                <Text color='#17171b99' fontWeight='900'>
+                  #1
+                </Text>
+                <Text color='#FFFFFF' fontSize='28' fontWeight='900'>
+                  Bulbasaur
+                </Text>
+              </Flex>
+              <Flex direction='row'>
+                <Flex direction='row' gap='2'>
+                  <Flex bg='#62b957' direction='row' gap='2' p='2' rounded='lg'>
+                    <Image w='4' src='https://poke-apiv2.vercel.app/assets/Icons/grassIcon.svg' />
+                    <Text color='#FFFFFF' fontWeight='900'>Grass</Text>
+                  </Flex>
+                  <Flex bg='#a552cc' direction='row' gap='2' p='2' rounded='lg'>
+                    <Image w='4' src='https://poke-apiv2.vercel.app/assets/Icons/poisonIcon.svg' />
+                    <Text color='#FFFFFF' fontWeight='900'>Poison</Text>
+                  </Flex>
+                </Flex>
+              </Flex>
+            </Flex>
+            <Flex direction='column' justifyContent='center'>
+              <Image w="130px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" />
+            </Flex>
+          </Flex>
+        </GridItem>
+        <GridItem w='100%' rounded='xl' bg='#89be89' px='3' py='2'>
+          <Flex direction='row' justifyContent='space-between'>
+            <Flex direction='column' justifyContent='center' gap='3'>
+              <Flex direction='column'>
+                <Text color='#17171b99' fontWeight='900'>
+                  #2
+                </Text>
+                <Text color='#FFFFFF' fontSize='28' fontWeight='900'>
+                  Ivysaur
+                </Text>
+              </Flex>
+              <Flex direction='row'>
+                <Flex direction='row' gap='2'>
+                  <Flex bg='#62b957' direction='row' gap='2' p='2' rounded='lg'>
+                    <Image w='4' src='https://poke-apiv2.vercel.app/assets/Icons/grassIcon.svg' />
+                    <Text color='#FFFFFF' fontWeight='900'>Grass</Text>
+                  </Flex>
+                  <Flex bg='#a552cc' direction='row' gap='2' p='2' rounded='lg'>
+                    <Image w='4' src='https://poke-apiv2.vercel.app/assets/Icons/poisonIcon.svg' />
+                    <Text color='#FFFFFF' fontWeight='900'>Poison</Text>
+                  </Flex>
+                </Flex>
+              </Flex>
+            </Flex>
+            <Flex direction='column' justifyContent='center'>
+              <Image w="130px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png" />
+            </Flex>
+          </Flex>
+        </GridItem>
+        <GridItem w='100%' rounded='xl' bg='#89be89' px='3' py='2'>
+          <Flex direction='row' justifyContent='space-between'>
+            <Flex direction='column' justifyContent='center' gap='3'>
+              <Flex direction='column'>
+                <Text color='#17171b99' fontWeight='900'>
+                  #3
+                </Text>
+                <Text color='#FFFFFF' fontSize='28' fontWeight='900'>
+                  Venusaur
+                </Text>
+              </Flex>
+              <Flex direction='row'>
+                <Flex direction='row' gap='2'>
+                  <Flex bg='#62b957' direction='row' gap='2' p='2' rounded='lg'>
+                    <Image w='4' src='https://poke-apiv2.vercel.app/assets/Icons/grassIcon.svg' />
+                    <Text color='#FFFFFF' fontWeight='900'>Grass</Text>
+                  </Flex>
+                  <Flex bg='#a552cc' direction='row' gap='2' p='2' rounded='lg'>
+                    <Image w='4' src='https://poke-apiv2.vercel.app/assets/Icons/poisonIcon.svg' />
+                    <Text color='#FFFFFF' fontWeight='900'>Poison</Text>
+                  </Flex>
+                </Flex>
+              </Flex>
+            </Flex>
+            <Flex direction='column' justifyContent='center'>
+              <Image w="130px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png" />
+            </Flex>
+          </Flex>
+        </GridItem>
+        <GridItem w='100%' rounded='xl' bg='#ffa857' px='3' py='2'>
+          <Flex direction='row' justifyContent='space-between'>
+            <Flex direction='column' justifyContent='center' gap='3'>
+              <Flex direction='column'>
+                <Text color='#17171b99' fontWeight='900'>
+                  #4
+                </Text>
+                <Text color='#FFFFFF' fontSize='28' fontWeight='900'>
+                  Charmander
+                </Text>
+              </Flex>
+              <Flex direction='row'>
+                <Flex direction='row' gap='2'>
+                  <Flex bg='#fd7d24' direction='row' gap='2' p='2' rounded='lg'>
+                    <Image w='4' src='https://poke-apiv2.vercel.app/assets/Icons/fireIcon.svg' />
+                    <Text color='#FFFFFF' fontWeight='900'>Fire</Text>
+                  </Flex>
+                </Flex>
+              </Flex>
+            </Flex>
+            <Flex direction='column' justifyContent='center'>
+              <Image w="130px" src="https://raw.githubusercontent.com/pokeapi/sprites/master/sprites/pokemon/other/official-artwork/4.png" />
+            </Flex>
+          </Flex>
+        </GridItem>
+        <GridItem w='100%' rounded='xl' bg='#ffa857' px='3' py='2'>
+          <Flex direction='row' justifyContent='space-between'>
+            <Flex direction='column' justifyContent='center' gap='3'>
+              <Flex direction='column'>
+                <Text color='#17171b99' fontWeight='900'>
+                  #5
+                </Text>
+                <Text color='#FFFFFF' fontSize='28' fontWeight='900'>
+                  Charmeleon
+                </Text>
+              </Flex>
+              <Flex direction='row'>
+                <Flex direction='row' gap='2'>
+                  <Flex bg='#fd7d24' direction='row' gap='2' p='2' rounded='lg'>
+                    <Image w='4' src='https://poke-apiv2.vercel.app/assets/Icons/fireIcon.svg' />
+                    <Text color='#FFFFFF' fontWeight='900'>Fire</Text>
+                  </Flex>
+                </Flex>
+              </Flex>
+            </Flex>
+            <Flex direction='column' justifyContent='center'>
+              <Image w="130px" src="https://raw.githubusercontent.com/pokeapi/sprites/master/sprites/pokemon/other/official-artwork/5.png" />
+            </Flex>
+          </Flex>
+        </GridItem>
+        <GridItem w='100%' rounded='xl' bg='#ffa857' px='3' py='2'>
+          <Flex direction='row' justifyContent='space-between'>
+            <Flex direction='column' justifyContent='center' gap='3'>
+              <Flex direction='column'>
+                <Text color='#17171b99' fontWeight='900'>
+                  #6
+                </Text>
+                <Text color='#FFFFFF' fontSize='28' fontWeight='900'>
+                  Charizard
+                </Text>
+              </Flex>
+              <Flex direction='row'>
+                <Flex direction='row' gap='2'>
+                  <Flex bg='#fd7d24' direction='row' gap='2' p='2' rounded='lg'>
+                    <Image w='4' src='https://poke-apiv2.vercel.app/assets/Icons/fireIcon.svg' />
+                    <Text color='#FFFFFF' fontWeight='900'>Fire</Text>
+                  </Flex>
+                  <Flex bg='#748fc9' direction='row' gap='2' p='2' rounded='lg'>
+                    <Image w='4' src='https://poke-apiv2.vercel.app/assets/Icons/flyingIcon.svg' />
+                    <Text color='#FFFFFF' fontWeight='900'>Flying</Text>
+                  </Flex>
+                </Flex>
+              </Flex>
+            </Flex>
+            <Flex direction='column' justifyContent='center'>
+              <Image w="130px" src="https://raw.githubusercontent.com/pokeapi/sprites/master/sprites/pokemon/other/official-artwork/6.png" />
+            </Flex>
+          </Flex>
+        </GridItem>
+        <GridItem w='100%' rounded='xl' bg='#55abf6' px='3' py='2'>
+          <Flex direction='row' justifyContent='space-between'>
+            <Flex direction='column' justifyContent='center' gap='3'>
+              <Flex direction='column'>
+                <Text color='#17171b99' fontWeight='900'>
+                  #7
+                </Text>
+                <Text color='#FFFFFF' fontSize='28' fontWeight='900'>
+                  Squirtle
+                </Text>
+              </Flex>
+              <Flex direction='row'>
+                <Flex direction='row' gap='2'>
+                  <Flex bg='#4a90da' direction='row' gap='2' p='2' rounded='lg'>
+                    <Image w='4' src='https://poke-apiv2.vercel.app/assets/Icons/waterIcon.svg' />
+                    <Text color='#FFFFFF' fontWeight='900'>Water</Text>
+                  </Flex>
+                </Flex>
+              </Flex>
+            </Flex>
+            <Flex direction='column' justifyContent='center'>
+              <Image w="130px" src="https://raw.githubusercontent.com/pokeapi/sprites/master/sprites/pokemon/other/official-artwork/7.png" />
+            </Flex>
+          </Flex>
+        </GridItem>
+        <GridItem w='100%' rounded='xl' bg='#55abf6' px='3' py='2'>
+          <Flex direction='row' justifyContent='space-between'>
+            <Flex direction='column' justifyContent='center' gap='3'>
+              <Flex direction='column'>
+                <Text color='#17171b99' fontWeight='900'>
+                  #8
+                </Text>
+                <Text color='#FFFFFF' fontSize='28' fontWeight='900'>
+                  Wartortle
+                </Text>
+              </Flex>
+              <Flex direction='row'>
+                <Flex direction='row' gap='2'>
+                  <Flex bg='#4a90da' direction='row' gap='2' p='2' rounded='lg'>
+                    <Image w='4' src='https://poke-apiv2.vercel.app/assets/Icons/waterIcon.svg' />
+                    <Text color='#FFFFFF' fontWeight='900'>Water</Text>
+                  </Flex>
+                </Flex>
+              </Flex>
+            </Flex>
+            <Flex direction='column' justifyContent='center'>
+              <Image w="130px" src="https://raw.githubusercontent.com/pokeapi/sprites/master/sprites/pokemon/other/official-artwork/8.png" />
+            </Flex>
+          </Flex>
+        </GridItem>
+        <GridItem w='100%' rounded='xl' bg='#55abf6' px='3' py='2'>
+          <Flex direction='row' justifyContent='space-between'>
+            <Flex direction='column' justifyContent='center' gap='3'>
+              <Flex direction='column'>
+                <Text color='#17171b99' fontWeight='900'>
+                  #8
+                </Text>
+                <Text color='#FFFFFF' fontSize='28' fontWeight='900'>
+                  Blastoise
+                </Text>
+              </Flex>
+              <Flex direction='row'>
+                <Flex direction='row' gap='2'>
+                  <Flex bg='#4a90da' direction='row' gap='2' p='2' rounded='lg'>
+                    <Image w='4' src='https://poke-apiv2.vercel.app/assets/Icons/waterIcon.svg' />
+                    <Text color='#FFFFFF' fontWeight='900'>Water</Text>
+                  </Flex>
+                </Flex>
+              </Flex>
+            </Flex>
+            <Flex direction='column' justifyContent='center'>
+              <Image w="130px" src="https://raw.githubusercontent.com/pokeapi/sprites/master/sprites/pokemon/other/official-artwork/9.png" />
+            </Flex>
+          </Flex>
+        </GridItem>
+      </Grid>
+    </Container>
+  </Center>
+)
 
-export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>Create Next App</title>
-        <meta name="description" content="Generated by create next app" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-    </>
-  )
-}
+export default IndexPage
