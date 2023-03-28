@@ -9,9 +9,17 @@ export const Hability = ({ imageUrl, type }: HabilityProps) => {
 
   const getBgColor = (elementType: string) => {
     if (elementType === 'Grass') {
-      return '#62b957'
+      return '#62B957'
     } else if (elementType === 'Poison') {
-      return '#a552cc'
+      return '#A552CC'
+    } else if (elementType === 'Fire') {
+      return '#fD7D24'
+    } else if (elementType === 'Flying') {
+      return '#748FC9'
+    } else if (elementType === 'Water') {
+      return '#4A90dA'
+    } else if (elementType === 'Bug') {
+      return '#8CB230'
     } else {
       return '#000'
     }

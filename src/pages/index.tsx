@@ -1,4 +1,4 @@
-import { Center, Container, Grid } from '@chakra-ui/react';
+import { Flex, Container, Grid } from '@chakra-ui/react';
 import { PokemonItem, PokemonTristeProps } from '@/components/PokemonItem';
 import { useEffect, useState } from 'react';
 
@@ -21,7 +21,7 @@ const IndexPage = () => {
   }, [])
 
   return (
-    <Center h='100vh'>
+    <Flex p='50px'>
       {!!data && (
         <Container maxW='1140px' justifyContent='center'>
           <Grid templateColumns='repeat(3, 1fr)' gap={6}>
@@ -31,7 +31,7 @@ const IndexPage = () => {
           </Grid>
         </Container>
       )}
-    </Center>
+    </Flex>
   )
 }
 
