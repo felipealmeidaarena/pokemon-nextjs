@@ -2,14 +2,14 @@ import { Center, Container, Grid } from '@chakra-ui/react';
 import { PokemonItem, PokemonTristeProps } from '@/components/PokemonItem';
 import { useEffect, useState } from 'react';
 
-import axios from 'axios';
+import { api } from '@/services/api';
 
 const IndexPage = () => {
   const [data, setData] = useState<PokemonTristeProps[]>([])
 
   const handleGetData = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/pokemons');
+      const response = await api.get('/pokemons');
       setData(response.data)
     } catch (error) {
       console.log(error)
